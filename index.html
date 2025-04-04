@@ -1,87 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>nadeem kariyad</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Poppins', sans-serif;
-    }
-    body {
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: #4f46e5;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
-    main {
-      padding: 2rem 1rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #e2e8f0;
-      color: #666;
-    }
-    a {
-      color: #4f46e5;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadeem Kariyad - AI/ML Data Scientist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Marcellus', serif;
+        }
+
+        body {
+            background-color: #0a0a0a;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        nav {
+            width: 250px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: #aaa;
+            margin-bottom: 2rem;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: opacity 0.3s;
+        }
+
+        ul li a:hover {
+            opacity: 0.7;
+        }
+
+        main {
+            flex-grow: 1;
+            text-align: right;
+            max-width: 500px;
+        }
+
+        .bio {
+            font-size: 1.1rem;
+            color: #ccc;
+        }
+
+        .theme-toggle {
+            margin-top: 20px;
+        }
+
+        .theme-toggle label {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .light-mode {
+            background-color: #f4f4f4;
+            color: #222;
+        }
+
+        .light-mode a {
+            color: #222;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>NADEEM MUHAMMED</h1>
-    <p>A simple and clean project website powered by GitHub Pages</p>
-  </header>
+    <div class="container">
+        <nav>
+            <h1>Nadeem Kariyad</h1>
+            <p class="subtitle">AI/ML Data Scientist</p>
+            <ul>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <label>
+                    <input type="checkbox" id="darkModeToggle">
+                    <span>Dark Mode</span>
+                </label>
+            </div>
+        </nav>
 
-  <main>
-    <section>
-      <h2>About the Project</h2>
-      <p>This is a demo project site built using HTML and hosted on GitHub Pages. You can showcase your work, explain your goals, and link to resources here.</p>
-    </section>
+        <main>
+            <p class="bio">
+                Passionate about leveraging AI and machine learning to solve real-world problems. Exploring new possibilities in data science through research and development.
+            </p>
+        </main>
+    </div>
 
-    <section>
-      <h2>Features</h2>
-      <ul>
-        <li>Clean layout</li>
-        <li>Mobile responsive</li>
-        <li>Hosted for free using GitHub Pages</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>Have questions or want to collaborate? <a href="mailto:your-email@example.com">contact me</a></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 My Project | Built with ❤️ using GitHub Pages</p>
-  </footer>
+    <script>
+        const toggle = document.getElementById('darkModeToggle');
+        toggle.addEventListener('change', () => {
+            document.body.classList.toggle('light-mode');
+        });
+    </script>
 </body>
 </html>
