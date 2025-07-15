@@ -1,0 +1,95 @@
+/* Animation Delays */
+.slide-in-left {
+    animation-delay: 0.2s;
+}
+
+.slide-in-right {
+    animation-delay: 0.4s;
+}
+
+/* Project Card Animation */
+.project-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.project-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.project-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.project-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.project-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+/* Skill Bar Animation */
+.skill-progress {
+    animation: fillProgress 1.5s ease-out forwards;
+}
+
+@keyframes fillProgress {
+    from {
+        width: 0;
+    }
+    to {
+        width: attr(data-width);
+    }
+}
+
+/* Counter Animation */
+.stat-number {
+    animation: countUp 2s ease-out forwards;
+}
+
+@keyframes countUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
